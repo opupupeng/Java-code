@@ -11,4 +11,10 @@ import java.util.List;
 public interface FoodDao {
     //食物列表查询
     public List<Food> findAll() throws SQLException;
+    //食物添加功能
+    Boolean saveFood(Food food) throws SQLException;
+    //食物修改功能
+    Boolean updateFood(Food food) throws SQLException;
+    //食物管理删除功能
+    Boolean delFoodById(Integer id) throws  SQLException;
 }
